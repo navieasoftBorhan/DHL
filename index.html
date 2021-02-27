@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WooMart Landing Page</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/others/favicon.png">
+
+    <!-- font awesome 4 css -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- custom theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/woomart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+ 
+    
+<!-- Mobile Menu section -->
+<section>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
+                    <i class="fa fa-bars"></i>  
+                </div>
+
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <a href="#"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
+                </div>
+
+                <!-- Right Menus -->
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/bdbaba.png" alt="">
+            </div>
+            <div class="cross-icon">
+                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+
+<header>
+
+    <!-- top header -->
+    <section class="top-header-section">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-header-wrapper flex">
+
+                        <!-- left menu -->
+                        <div class="top-header-item-left">
+                            <ul>
+                                <li><a href="">English</a></li>
+                                <li><a href="">Country</a></li>
+                                <li><a href="">FREE SHIPPING FOR ALL ORDERS OF $150</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- social menu -->
+                        <div class="top-header-item-right">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- last menu -->                        
+                        <div class="last-menu">
+                            <ul>
+                                <li><a href="">Newslatter</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">FAQS</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main menu -->
+    <section class="main-header-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                   <div class="main-menu-wrapper flex">
+
+                        <!-- logo area -->
+                       <div class="main-menu-item main-menu-logo-area">
+                           <div class="main-menu-logo">
+                               <a href="index.html"><img src="assets/images/others/logo.svg" alt=""></a>
+                           </div>
+                       </div>
+
+                       <!-- search area -->
+                       <div class="main-menu-item">
+                            <div class="main-menu-search-area">
+                                <div class="search-form">
+                                    <form action="#" method="POST">
+                                       <input type="text" placeholder="What Are You Looking For..." name="search">
+                                       <select name="" id="search-category">
+                                           <option value="Products">Products</option>
+                                           <option value="Products">Products</option>
+                                           <option value="Suppliers">Suppliers</option>
+                                       </select>
+                                       <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                                    </form>
+                                </div>
+                            </div>
+                       </div>
+
+                       <!-- main menu right profile area -->
+                       <div class="main-menu-item">
+                           <div class="main-menu-right-profile-area">
+                               <ul>
+                                   <li><a href="login.html">Login /</a> <a href="registation.html">Register</a></li>
+                                   <li><i class="far fa-heart"></i></li>
+                                   <li><img src="assets/images/icon/compare.svg" alt=""></li>
+                                   <li onclick="CartSidebarToggle()" style="cursor: pointer;"><img src="assets/images/icon/shopping-cart.svg" alt=""> &nbsp; <b>$0.00</b></li>
+                               </ul>
+                           </div>
+                       </div>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mega menu area -->
+    <section class="mega-menu-section" id="MainMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-mega-menu-wrapper flex">
+                        <div class="main-mega-left">
+                            <ul>
+
+
+                                <li>
+                                    <div class="browse-category" onclick="BrowseCategory()">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="#">Browse category</a>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </li>
+
+                                <!-- logo -->
+                                <li class="mega-logo" id="MegaLogo">
+                                    <a href="index.html">
+                                        <img src="assets/images/others/logo.svg" alt="">
+                                    </a>
+                                </li>
+
+                                <li class="hover-mega-menu"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                                    <div class="main-hover-mega-menu-wrapper">
+                
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                
+                                    </div>
+                                </li>
+                                <li class="hover-mega-menu"> <a href="#">Clothing <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                                    <div class="main-hover-mega-menu-wrapper">
+                
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                
+                                    </div>
+                                </li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Elements</a></li>
+                                <li><a href="#">Buy</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-mega-right">
+                            <ul>
+                                <li><a href="#">Specific Offers</a></li>
+                                <li><a href="#">Deal Of The Day</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sidebar menu -->
+    <section style="position: relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- left sidebar -->
+                    <div class="browse-category-sidebar"  id="BrowseCategory">
+                        <ul>
+                            
+                            <li class="hover-sidebar-mega-menu">
+                                <a href="#">Home Apperal </a>
+                                <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                        
+                                <div class="main-hover-sidebar-mega-menu-wrapper">
+    
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                            <li><a href="#">Home Apperal</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+    
+                                </div>
+                            </li>
+                            <li class="hover-sidebar-mega-menu">
+                                <a href="#">Furnitures</a>
+                                    <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                        
+                                <div class="main-hover-sidebar-mega-menu-wrapper">
+    
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                            <li><a href="#">Furnitures</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-hover-sidebar-menu-columns">
+                                        <ul>
+                                            <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+    
+                                </div>
+                            </li>
+                            <li><a href="#">Cooking</a></li>
+                            <li><a href="#">Accesories</a></li>
+                            <li><a href="#">Fashions</a></li>
+                            <li><a href="#">Clock</a></li>
+                            <li><a href="#">Lighting</a></li>
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Hand Made</a></li>
+                            <li><a href="#">Minimalizm</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Clock</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</header>
+
+
+<main>
+
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <div class="main-hero-section-wrapper">
+                        <!-- left sidebar -->
+                        <div class="hero-left-sidebar">
+                            <ul>
+                                
+                                <li class="hover-sidebar-mega-menu">
+                                    <a href="#">Home Apperal </a>
+                                    <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                            
+                                    <div class="main-hover-sidebar-mega-menu-wrapper">
+        
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                                <li><a href="#">Home Apperal</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div> -->
+        
+                                    </div>
+                                </li>
+                                <li class="hover-sidebar-mega-menu">
+                                    <a href="#">Furnitures</a>
+                                        <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                            
+                                    <div class="main-hover-sidebar-mega-menu-wrapper second-sidebar-mega-wapper">
+        
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                                <li><a href="#">Furnitures</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="single-hover-sidebar-menu-columns">
+                                            <ul>
+                                                <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Home</a></li>
+                                            </ul>
+                                        </div> -->
+        
+                                    </div>
+                                </li>
+                                <li><a href="#">Cooking</a></li>
+                                <li><a href="#">Accesories</a></li>
+                                <li><a href="#">Fashions</a></li>
+                                <li><a href="#">Clock</a></li>
+                                <li><a href="#">Lighting</a></li>
+                                <li><a href="#">Toys</a></li>
+                                <li><a href="#">Hand Made</a></li>
+                                <li><a href="#">Minimalizm</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Cars</a></li>
+                                <li><a href="#">Clock</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- right slider -->
+                        <div class="main-hero-slider-section">
+                            <div class="swiper-container hero-slider">
+                                <div class="swiper-wrapper">
+    
+                                    <!-- single slide item -->
+                                    <div class="swiper-slide">
+                                        <div class="hero-single-slide">                               
+    
+                                            <!-- content area -->
+                                            <div class="hero-main-content-area">
+                                                <!-- content -->
+                                                <div class="hero-single-slider-content">
+                                                    <h2>Simple - <br> Rock Chair. </h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt nobis. Reiciendis adipisci molestiae perspiciatis.</p>
+                                                </div>
+    
+                                                <!-- mini thumb -->
+                                                <div class="hero-mini-thumb-wrapper">
+    
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner1.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner2.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner3.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner1.jpg" alt="">
+                                                    </div>
+    
+                                                </div>
+    
+                                                <!-- price -->
+                                                <div class="price-wrapper">
+                                                    <span>$199</span>
+                                                </div>
+                                            </div>
+    
+                                            <!-- thumbnail -->
+                                            <div class="hero-single-slider-thumb">
+                                                <img src="assets/images/woomart/banner1.jpg" alt="">
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <!-- single slide item -->
+                                    <div class="swiper-slide">
+                                        <div class="hero-single-slide">                               
+    
+                                            <!-- content area -->
+                                            <div class="hero-main-content-area">
+                                                <!-- content -->
+                                                <div class="hero-single-slider-content">
+                                                    <h2>Simple - <br> Rock Chair. </h2>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. nesciunt nobis. Reiciendis adipisci molestiae perspiciatis.</p>
+                                                </div>
+    
+                                                <!-- mini thumb -->
+                                                <div class="hero-mini-thumb-wrapper">
+    
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner1.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner2.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner3.jpg" alt="">
+                                                    </div>
+                                                    <!-- item -->
+                                                    <div class="hero-mini-thumb-item">
+                                                        <img src="assets/images/woomart/banner1.jpg" alt="">
+                                                    </div>
+    
+                                                </div>
+    
+                                                <!-- price -->
+                                                <div class="price-wrapper">
+                                                    <span>$199</span>
+                                                </div>
+                                            </div>
+    
+                                            <!-- thumbnail -->
+                                            <div class="hero-single-slider-thumb">
+                                                <img src="assets/images/woomart/banner2.jpg" alt="">
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured categories title -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="feature-categories-title">
+                        <p>WOODMART COLLECTIONS</p>
+                        <h2>FEATURED CATEGORIES</h2>
+                        <p>WoodMart is a powerful eCommerce theme for WordPress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured items -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="featured-wrapper flex">
+
+                        <!-- items left -->
+                        <div class="featured-items-big">
+                            <div class="featured-big-thumb">
+                                <img src="assets/images/woomart/a.jpg" alt="">
+                            </div>
+                            <div class="main-cat-title-wrapper">
+                                <div class="featured-cat-title">
+                                    <h2>Furniture</h2>
+                                </div>
+                                <div class="featured-cat-title-hover-mask">
+                                    <p>25 Products</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- items right -->
+                        <div class="featured-item-right-mini-wrapper">
+
+                            <!-- item -->
+                            <div class="featued-mini-box">
+                                <div class="featured-mini-thumb">
+                                    <img src="assets/images/woomart/cat-clock-3-430x430.jpg" alt="">
+                                </div>
+                                <div class="main-cat-min-title-wrapper">
+                                    <div class="featured-cat-title">
+                                        <h2>Furniture</h2>
+                                    </div>
+                                    <div class="featured-cat-title-hover-mask">
+                                        <p>25 Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="featued-mini-box">
+                                <div class="featured-mini-thumb">
+                                    <img src="assets/images/woomart/cat-klock-430x430.jpg" alt="">
+                                </div>
+                                <div class="main-cat-min-title-wrapper">
+                                    <div class="featured-cat-title">
+                                        <h2>Furniture</h2>
+                                    </div>
+                                    <div class="featured-cat-title-hover-mask">
+                                        <p>25 Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="featued-mini-box">
+                                <div class="featured-mini-thumb">
+                                    <img src="assets/images/woomart/light-cat-5-430x430.jpg" alt="">
+                                </div>
+                                <div class="main-cat-min-title-wrapper">
+                                    <div class="featured-cat-title">
+                                        <h2>Furniture</h2>
+                                    </div>
+                                    <div class="featured-cat-title-hover-mask">
+                                        <p>25 Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="featued-mini-box">
+                                <div class="featured-mini-thumb">
+                                    <img src="assets/images/woomart/Toys-cat-1-430x430.jpg" alt="">
+                                </div>
+                                <div class="main-cat-min-title-wrapper">
+                                    <div class="featured-cat-title">
+                                        <h2>Furniture</h2>
+                                    </div>
+                                    <div class="featured-cat-title-hover-mask">
+                                        <p>25 Products</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured Products title -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="feature-categories-title">
+                        <p>WOODEN ACCESSORIES</p>
+                        <h2>FEATURED PRODUCTS</h2>
+                        <p>Visit our shop to see amazing creations from our designers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- tab import -->
+    <section class="main-women-collection-seciton">
+        <!-- Women categories title and navbar -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="women-categories-navbar">
+                            <nav>
+                                <div class="nav nav-tabs women-collection-navbar" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Ring</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sharee</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Three Peice</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Women categorie items -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-content" id="nav-tabContent">
+    
+                            <!-- First tabs -->
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/product-furniture-4-3.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/1.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/3.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/4.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/5.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/6.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/woomart/7.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+    
+                            </div>
+    
+                            <!-- Second tabs -->
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+            
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>           
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+    
+                            </div>
+    
+                            <!-- Third tabs -->
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+    
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+
+                                <!-- wrapper -->
+                                <div class="tab-products-wrapper">
+            
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- items -->
+                                    <div class="tab-product-box">
+                                        <div class="tab-single-product-item">
+                                            <div class="tab-product-thumb">
+                                                <img src="assets/images/banner/2.jpg" alt="">
+                                            </div>
+                                            <div class="tab-offers">
+                                                <span>-73%</span>
+                                            </div>
+            
+                                                <!-- hide compare color -->
+                                            <div class="tab-hide-compare-color">
+                                                <div class="tab-color">
+                                                    <span class="color gray"></span>
+                                                    <span class="color black"></span>
+                                                    <span class="color red"></span>
+                                                    <span class="color blue"></span>
+                                                </div>
+                                                <div class="tab-icon">
+                                                    <img src="assets/images/icon/compare.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        
+            
+                                        <!-- content -->
+                                        <div class="tab-product-content">
+                                            <h3>Wooden single drawer</h3>
+                                            <h4>Furniture</h4>
+                                            <h5>$249.00 - $399.00</h5>
+                                        </div>
+            
+                                        <!-- hide content -->
+                                        <div class="tab-product-hide-content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor, error culpa consectetur maxime laboriosam.</p>
+                                            <div class="tab-bottom-button">
+                                                <li><i class="far fa-heart"></i></li>
+                                                <li><a class="tab-buy-now-btn" href="#">View Product</a></li>
+                                                <li><i class="far fa-heart"></i></li>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+            
+                                </div>
+    
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <!-- tab import -->
+
+    <!-- tabs featured products -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- big featured products box -->
+    <section class="big-featured-product-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-featured-product-wrapper">
+
+                        <div class="big-featured-product-items">
+                            <div class="big-product-item-thumb">
+                                <img src="assets/images/woomart/big-chair.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="big-featured-product-item-content">
+                            
+                            <div class="big-top-featured-content">
+                                <p>Product Landing Page</p>
+                                <h2>Woodspot - <br> Land By Seletie.</h2>
+                            </div>
+
+                            <div class="big-product-item-content-details">
+
+                                <div class="big-product-details-item">
+                                    <p>Designer</p>
+                                    <p>Daniyel Mathew</p>
+                                </div>
+                                <div class="big-product-details-item">
+                                    <p>Materials</p>
+                                    <p>Wood, Lether, Metel</p>
+                                </div>
+                                <div class="big-product-details-item">
+                                    <p>Client</p>
+                                    <p>Woodmart, Bengal</p>
+                                </div>
+
+                            </div>
+
+                            <div class="big-product-price">
+                                <p>$399.00</p>
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- big flex section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-flex-section-wrapper">
+
+                        <!-- content -->
+                        <div class="big-flex-section-item">
+                            <span>ALL-IN-ONE ECOMMERCE SOLUTION</span>
+                            <h2>ABOUT OUR WOODMART STORE</h2>
+                            <p>Nec  adipiscing luctus consequat penatibus parturient massa cubilia etiam a adipiscing enigm dignissim congue egestas sapien a. Scelerisque ac non ut ac bibendum himenaeos ullamcorper justo himenaeos vel a sapien quis.</p>
+                            <div class="big-flex-buttons">
+                                <a class="big-flex-button read-more" href="#">Read More</a>
+                                <a class="big-flex-button contact-us" href="#">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <!-- thumbnail -->
+                        <div class="big-flex-section-item-thumb">
+                            <!-- <img src="assets/images/woomart/lamp.png" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newslatter seciton -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="join-our-newslatter-wrapper">
+                        <h2>JOIN OUR NEWSLETTER NOW</h2>
+                        <input type="text"> <button>Sign Up</button>
+                        <p>Will be used in accordance with our <a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- blog title -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="feature-categories-title">
+                            <p>FURNITURE GUIDES</p>
+                            <h2>OUR LATEST NEWS</h2>
+                            <p>Latest trends and inspiration in interior design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-trade-services">
+        
+                            <!-- Single items -->
+                            <div class="trade-service-box">
+                                <div class="trad-service-thumb">
+                                    <img src="assets/images/products/corr2.jpg" alt="">
+                                </div>
+                                <div class="blog-date">
+                                    <p>09</p>
+                                    <p>FAB</p>
+                                </div>
+                                <div class="blog-category">
+                                    <p>Furniture, Design trands</p>
+                                </div>
+                                <div class="trad-content-area">
+                                    <a href="single-blog.html"><h2>Here your title blog title goes here</h2></a>
+                                    <p>amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                                </div>
+                                <div class="readmore-button">
+                                    <button>Continue Reading</button>
+                                </div>
+                            </div>
+                            <!-- Single items -->
+                            <div class="trade-service-box">
+                                <div class="trad-service-thumb">
+                                    <img src="assets/images/products/corr1.jpg" alt="">
+                                </div>
+                                <div class="blog-date">
+                                    <p>09</p>
+                                    <p>JAN</p>
+                                </div>
+                                <div class="blog-category">
+                                    <p>Furniture, Design trands</p>
+                                </div>
+                                <div class="trad-content-area">
+                                    <a href="single-blog.html"><h2>Here your title blog title goes here</h2></a>
+                                    <p>amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                                </div>
+                                <div class="readmore-button">
+                                    <button>Continue Reading</button>
+                                </div>
+                            </div>
+                            <!-- Single items -->
+                            <div class="trade-service-box">
+                                <div class="trad-service-thumb">
+                                    <img src="assets/images/products/corr2.jpg" alt="">
+                                </div>
+                                <div class="blog-date">
+                                    <p>09</p>
+                                    <p>FAB</p>
+                                </div>
+                                <div class="blog-category">
+                                    <p>Furniture, Design trands</p>
+                                </div>
+                                <div class="trad-content-area">
+                                    <a href="single-blog.html"><h2>Here your title blog title goes here</h2></a>
+                                    <p>amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                                </div>
+                                <div class="readmore-button">
+                                    <button>Continue Reading</button>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- our featured brand -->
+        <section class="our-featured-brand-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-category">
+                             
+                            <div class="swiper-container category-slider">
+                                <div class="swiper-wrapper">
+        
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-alessi.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-Eva-Solo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-Louis-Poulsen.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-Rosenthal.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-Eva-Solo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/brand-witra.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/nichemodern.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="category-products-item">
+                                            <img src="assets/images/woomart/klobe2r.png" alt="">
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+</main>
+
+<footer>
+
+    <div class="ClickTop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- main footer section -->
+    <section class="footer-menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-menu-wrapper">
+
+                        <!-- logo -->
+                        <div class="footer-logo-area">
+                            <div class="footer-thumb">
+                                <a href="index.html"><img src="assets/images/others/logo.svg" alt=""></a>
+                            </div>
+                            <p>Condimentum adipiscing vel neque dis nam parturient orci at scelerisque neque dis nam parturient.</p>
+
+                            <li>451 Wall Street, UK, London</li>
+                            <li>Phone: (064) 332-1233</li>
+                            <li>Fax: (099) 453-1357</li>
+                        </div>
+
+                        <!-- RECENT POSTS -->
+                        <div class="footer-recent-post">
+
+                            <!-- item -->
+                            <div class="footer-recent-post-box">
+                                <div class="footer-recent-thumb">
+                                    <img src="assets/images/Bag/3.png" alt="">
+                                </div>
+                                <div class="footer-recent-content">
+                                    <h4>A companion for extra sleeping</h4>
+                                    <p>July 23, 2016 <span> &nbsp; 1 Comment</span></p>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="footer-recent-post-box">
+                                <div class="footer-recent-thumb">
+                                    <img src="assets/images/Cosmetics/2.jpg" alt="">
+                                </div>
+                                <div class="footer-recent-content">
+                                    <h4>A companion for extra sleeping</h4>
+                                    <p>July 23, 2016 <span>1 Comment</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- OUR STORES -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">OUR STORES</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- USEFUL LINKS -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">USEFUL LINKS</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- FOOTER MENU -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">FOOTER MENU</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bottom footer -->
+    <section class="footer-bottom-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom-wrapper flex">
+                        <div class="footer-bottom-box">
+                            @ Copyright 2020 all right reserved - Navieasoft ltd.
+                        </div>
+                        <div class="footer-bottom-box">
+                           <img src="assets/images/woomart/payments.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/borhan.js"></script>
+
+</body>
+</html>
